@@ -1,0 +1,76 @@
+{
+  "editor.formatOnSave": true,
+  "editor.cursorBlinking": "expand",
+  "editor.cursorSmoothCaretAnimation": "on",
+  "editor.stickyScroll.enabled": true,
+  "editor.suggest.insertMode": "replace",
+  // Prettier 配置
+  "prettier.singleQuote": true,
+  "prettier.semi": false,
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  // Vim 配置
+  "vim.leader": "<Space>",
+  "vim.highlightedyank.enable": true,
+  "vim.showcmd": false,
+  "vim.foldfix": true,
+  "vim.easymotion": true,
+  "vim.surround": true,
+  "vim.sneak": true,
+  "vim.useSystemClipboard": true,
+  "vim.hlsearch": true,
+  "vim.ignorecase": true,
+  "vim.useCtrlKeys": true,
+  "vim.handleKeys": {},
+  "vim.normalModeKeyBindings": [
+    {
+      "before": ["leader", "n"],
+      "commands": [":nohl"],
+      "silent": true
+    },
+    {
+      "before": ["leader", "w"],
+      "commands": ["workbench.action.files.save"]
+    },
+    {
+      "before": ["L"],
+      "after": ["$"]
+    },
+    {
+      "before": ["H"],
+      "after": ["^"]
+    }
+  ],
+  "vim.normalModeKeyBindingsNonRecursive": [
+    {
+      "before": ["u"],
+      "commands": ["undo"]
+    },
+    {
+      "before": ["<C-r>"],
+      "commands": ["redo"]
+    },
+    {
+      "before": ["<C-r>"],
+      "commands": ["redo"]
+    }
+  ],
+  "vim.insertModeKeyBindings": [
+    {
+      "before": ["j", "j"],
+      "after": ["<Esc>"]
+    },
+    {
+      "before": ["j", "k"],
+      "after": ["<Esc>"]
+    },
+    {
+      "before": ["k", "k"],
+      "after": ["<Esc>"]
+    }
+  ]
+}

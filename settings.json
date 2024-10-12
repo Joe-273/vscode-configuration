@@ -1,18 +1,4 @@
 {
-  "editor.formatOnSave": true,
-  "editor.cursorBlinking": "expand",
-  "editor.cursorSmoothCaretAnimation": "on",
-  "editor.stickyScroll.enabled": true,
-  "editor.suggest.insertMode": "replace",
-  // Prettier 配置
-  "prettier.singleQuote": true,
-  "prettier.semi": false,
-  "[jsonc]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "[html]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
   // Vim 配置
   "vim.leader": "<Space>",
   "vim.highlightedyank.enable": true,
@@ -72,5 +58,35 @@
       "before": ["k", "k"],
       "after": ["<Esc>"]
     }
-  ]
+  ],
+  // 编辑器配置
+  "workbench.iconTheme": "material-icon-theme",
+  "workbench.colorTheme": "Ayu Mirage Bordered",
+  "editor.fontFamily": "'JetBrainsMonoNL Nerd Font' ,'微软雅黑' , 'Courier New', monospace",
+  "editor.formatOnSave": true,
+  "editor.cursorBlinking": "expand",
+  "editor.cursorSmoothCaretAnimation": "on",
+  "editor.stickyScroll.enabled": true,
+  "editor.suggest.insertMode": "insert",
+  // 终端配置
+  "terminal.integrated.defaultProfile.windows": "NuShell",
+  "terminal.integrated.profiles.windows": {
+    "NuShell": {
+      "path": ["nu.exe"],
+      "source": "NuShell"
+    }
+  },
+  // Prettier 配置
+  "prettier.singleQuote": true,
+  "prettier.semi": false,
+  // 代码格式化 配置
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  }
 }
